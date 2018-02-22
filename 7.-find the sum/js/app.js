@@ -3,7 +3,7 @@
 // Escribe tu código aquí....
 /*function findSum(array, number){
   for(var i = 0; i < array.length; i++){
-    for(var j = i + 1; j < array.length; j++){
+    for(var j = i; j < array.length; j++){
       if(array[j] + array[i] === number ){
         return [array[i], array[j]]
       }
