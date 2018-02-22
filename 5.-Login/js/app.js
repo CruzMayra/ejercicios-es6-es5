@@ -1,19 +1,22 @@
-// En este ejercicio deberas crear tu solción en ES5, asegurarte que funcione 
+// En este ejercicio deberas crear tu solción en ES5, asegurarte que funcione
 
 // declara el prompt
- 
-function user () {
-// escribe tu código aqui...
-}
+//var password = prompt('Por favor ingresa tu contraseña');
 
-
-
-
-
+/*function user(password) {
+  if(password === 'laboratoria'){
+    return true
+  } else {
+    return false
+  }
+}*/
 
 // comenta todo lo anterior y escribelo en ES6
 
-
-// user () => {
-
-// }
+const user = password => {
+  if(password === 'laboratoria'){
+    return true
+  } else {
+    return false
+  }
+}
