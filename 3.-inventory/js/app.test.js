@@ -1,5 +1,5 @@
 describe("totalByCategory", () => {
-  it("returns the elements squared only if the number is positive if passed an array of numbers", () => {
+  it("returns the total price of an indicated category if passed an array of objects", () => {
     expect(totalByCategory([
       { name: "Inka Cola", category: "beverage", stock: "10" },
       { name: "Cusqueña", category: "beverage", stock: "15" },
@@ -15,7 +15,7 @@ describe("totalByCategory", () => {
       { name: "Ciruela", category: "fruit", stock: "8" }
     ], "beverage")).toEqual(120);
   });
-  it("returns the elements squared only if the number is positive if passed an array of numbers", () => {
+  it("returns zero if do not find the category in the series of numbers passed", () => {
     expect(totalByCategory([
       { name: "Inka Cola", category: "beverage", stock: "10" },
       { name: "Cusqueña", category: "beverage", stock: "15" },
