@@ -1,40 +1,28 @@
-// 3 variables llamadas igual para hacer 3 pruebas (usa una variable y las otras 2 comentalas)
+// 3 variables llamadas igual para hacer 3 pruebas (usa una variable y las otras 2 comentalas).
+// Se eliminan las variables arriba mencionadas para correr las pruebas en Jasmine (abrir index.html)
 
                                 // ES5
 
 // declara las variables ES5
+// declaración de la funcion
 
-var array = [2, 4, 6];
-// var array = [-3, 2, -8, 12, 5];
-// var array = [1, 2, 3, 4, 5];
-
-
-// declaración de la funcion 
-
-function square () {
-  // escribe tu código aqui...
-}
-
-square(array);
-
-
+/* function square(array) {
+  return array.filter(function(item) {
+    return item > 0
+  })
+  .map(function(item) {
+    return item * item
+  })
+}*/
                       //  ES6
 
 // Ahora comenta todo el codigo de arriba y escribelo en ES6
-
-
 // declara variables (let-const)
-
-
 // declara la funcion y ejecuta el código
 
+const square = array => {
+  return array.filter(item => item > 0)
+  .map(item => item * item)
+}
 
-
-
-
-
-
-
-
-// ejecuta la funcion 
-
+// ejecuta la funcion
